@@ -1,0 +1,45 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem; /* Spacing between cards */
+    padding: 20px; /* Padding around the grid */
+}
+
+.restaurant-card {
+    border: none;
+    border-radius: 10px; /* Adjusted for a softer look */
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures that the rounded corners are respected */
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-image {
+    height: 150px; /* Set a fixed height */
+    width: 100%; /* Make it responsive to card width */
+    object-fit: cover; /* Cover ensures the image fills the space */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Slightly smaller for better fit */
+    font-weight: bold;
+    margin: 10px 0; /* Top and bottom margins */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Slightly smaller for better fit */
+    margin: 5px 0; /* Top and bottom margins */
+    color: #555; /* Optional: muted color for better readability */
+    line-height: 1.4; /* Improves readability */
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+/* Optional: Add styles for the list group if needed */
+.list-group-item {
+    padding: 10px 15px; /* Padding for list items */
+    border: none; /* Remove border */
+    background-color: transparent; /* Transparent background */
+}
