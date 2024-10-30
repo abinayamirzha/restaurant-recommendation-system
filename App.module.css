@@ -1,0 +1,31 @@
+/* src/App.module.css */
+
+.appContainer {
+    display: flex;
+    flex-direction: column; /* Stack NavBar on top */
+    min-height: 100vh; /* Full height */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.mainContent {
+    display: flex; /* Horizontal layout for filters and restaurant cards */
+    flex: 1; /* Allow it to take remaining space */
+    padding: 20px; /* Padding around content */
+}
+
+.filtersContainer {
+    width: 250px; /* Fixed width for filters */
+    margin-right: 20px; /* Space between filters and restaurant cards */
+}
+
+.restaurantsContainer {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Inner padding */
+    background-color: #ffffff; /* White background for restaurants */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.restaurantsHeader {
+    margin-bottom: 20px; /* Space below header */
+}
